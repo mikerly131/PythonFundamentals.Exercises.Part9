@@ -1,0 +1,7 @@
+"DATA-STUFF":
+    "name": "Bob",
+    "neutral_special": "Complain to Management",
+    "side_special": "Flipping Burgers",
+    "up_special": "Spilt Coffe",
+    "down_special": "Ripped Jeans",
+    "final_smash": "Recliner Nap"

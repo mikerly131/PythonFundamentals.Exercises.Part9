@@ -11,6 +11,8 @@ def open_json_file(filepath: str):
             return all_file_data
     except FileNotFoundError:
         raise FileNotFoundError
+    except ValueError:
+        raise ValueError
     
     
    
@@ -25,11 +27,10 @@ def open_all_json_files(directory: str):
 """
 
 # Planning control flow for a program if needed
-"""
-filename = 'data/super_smash_bros/link.json'
-mario_data = open_json_file(filename)
-print(mario_data)
-"""
+
+# filename = 'data/super_smash_bros/bob.txt'
+# mario_data = open_json_file(filename)
+# print(mario_data)
 
 
 
