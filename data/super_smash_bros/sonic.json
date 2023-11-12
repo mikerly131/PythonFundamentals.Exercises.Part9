@@ -1,0 +1,8 @@
+{
+    "name": "Sonic",
+    "neutral_special": "Spin Dash",
+    "side_special": "Super Slide",
+    "up_special": "Cannonball",
+    "down_special": "Turbo Charge",
+    "final_smash": "Sonic Super Slam"
+}

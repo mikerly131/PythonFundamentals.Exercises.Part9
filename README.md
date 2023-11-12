@@ -15,6 +15,9 @@
 * Define a function called *read_json*. Given a string representing a file path to a json file, this function should open said file and convert its contens into a json object.
 * The json object should be returned.
 
+My test path:
+python3 -m unittest json_helpter_test.py
+
 ### Part B
 * Define a function called *read_all_json_files*. Given a string representing a path to a directory, this function should read all of the json files and return a list containing all of the json objects.
 * Make sure to incorporate the work from part A.
