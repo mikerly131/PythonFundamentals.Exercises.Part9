@@ -46,3 +46,9 @@ class JSONHelperTestClass(TestCase):
         test_data = [{'name': 'Wario', 'neutral_special': 'Slimeball', 'side_special': 'Cloak', 'up_special': 'Super Jump Slap', 'down_special': 'Belly Flop', 'final_smash': 'Mustache You to Leave'}, {'name': 'Sonic', 'neutral_special': 'Spin Dash', 'side_special': 'Super Slide', 'up_special': 'Cannonball', 'down_special': 'Turbo Charge', 'final_smash': 'Sonic Super Slam'}, {'name': 'Mario', 'neutral_special': 'Fireball', 'side_special': 'Cape', 'up_special': 'Super Jump Punch', 'down_special': 'F.L.U.D.D.', 'final_smash': 'Mario Finale'}, {'name': 'Link', 'neutral_special': 'Bow and Arrows', 'side_special': ' Boomerang', 'up_special': ' Spin Attack', 'down_special': 'Remote Bomb', 'final_smash': 'Ancient Bow and Arrow'}]
         actual_data = json_helper.open_all_json_files(test_dir)
         self.assertEqual(test_data, actual_data)
+
+        # Path that does not exist, should not be found
+    def test_open_all_json_files2(self):
+        test_dir = '/PythonFundamentals.Exercises.Part9/files/super_smash_bros/'
+        with self.assertRaises(NotADirectoryError):
+            json_helper.open_all_json_files(test_dir)
