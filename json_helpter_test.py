@@ -6,7 +6,7 @@ import json_helper
 class JSONHelperTestClass(TestCase):
 
     """
-    Next 4 tests are for open_json_file.  Assumes only json files will be passed for now.
+    Next 4 tests are for open_json_file.
     """
 
     # Full path existing json file
@@ -36,3 +36,13 @@ class JSONHelperTestClass(TestCase):
         with self.assertRaises(ValueError):
             json_helper.open_json_file(test_file)
     
+    """
+    Next test is for open_all_json_files.  Directory includes non-json .txt file
+    """
+
+    # Full path to dir with json files.  test_data excludes the contents of the .txt file in directory
+    def test_open_all_json_files(self):
+        test_dir = '/Users/mike/projects/zcw_python/PythonFundamentals.Exercises.Part9/data/super_smash_bros/'
+        test_data = [{'name': 'Wario', 'neutral_special': 'Slimeball', 'side_special': 'Cloak', 'up_special': 'Super Jump Slap', 'down_special': 'Belly Flop', 'final_smash': 'Mustache You to Leave'}, {'name': 'Sonic', 'neutral_special': 'Spin Dash', 'side_special': 'Super Slide', 'up_special': 'Cannonball', 'down_special': 'Turbo Charge', 'final_smash': 'Sonic Super Slam'}, {'name': 'Mario', 'neutral_special': 'Fireball', 'side_special': 'Cape', 'up_special': 'Super Jump Punch', 'down_special': 'F.L.U.D.D.', 'final_smash': 'Mario Finale'}, {'name': 'Link', 'neutral_special': 'Bow and Arrows', 'side_special': ' Boomerang', 'up_special': ' Spin Attack', 'down_special': 'Remote Bomb', 'final_smash': 'Ancient Bow and Arrow'}]
+        actual_data = json_helper.open_all_json_files(test_dir)
+        self.assertEqual(test_data, actual_data)
