@@ -5,3 +5,6 @@
     "up_special": "Spilt Coffe",
     "down_special": "Ripped Jeans",
     "final_smash": "Recliner Nap"
+
+
+This file is for unit testing - make sure function to read json only reads json
