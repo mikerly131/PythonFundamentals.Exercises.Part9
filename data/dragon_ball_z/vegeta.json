@@ -1,0 +1,13 @@
+{
+    "name" : "Vegeta",
+    "major_weakness" : "Bulma",
+    "charisma" : 9,
+    "speed" : 8,
+    "strength" : 9,
+    "power_level": "Over 9000",
+    "power_attack" : "Turning Left",
+    "fast_attack" : "Kick to Face",
+    "finisher" : "Anger Unleashed",
+    "special_finisher" : "Suicidal Blast That Fails"
+
+}

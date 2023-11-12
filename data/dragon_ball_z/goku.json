@@ -1,0 +1,13 @@
+{
+    "name" : "Goku",
+    "major_weakness" : "hunger",
+    "charisma" : 7,
+    "speed" : 9,
+    "strength" : 10,
+    "power_level": "Over 9000",
+    "power_attack" : "Kamehameha",
+    "fast_attack" : "Kaoken Attack",
+    "finisher" : "Moral Lesson",
+    "special_finisher" : "Spirit Bomb"
+
+}

@@ -16,6 +16,24 @@ class JSONHelperTestClass(TestCase):
         actual_data = json_helper.open_json_file(test_file)
         self.assertEqual(test_data, actual_data)
 
+    # Full path existing json file, different data
+    def test_open_json_file5(self):
+        test_file = '/Users/mike/projects/zcw_python/PythonFundamentals.Exercises.Part9/data/dragon_ball_z/goku.json'
+        test_data = {
+            "name" : "Goku",
+            "major_weakness" : "hunger",
+            "charisma" : 7,
+            "speed" : 9,
+            "strength" : 10,
+            "power_level": "Over 9000",
+            "power_attack" : "Kamehameha",
+            "fast_attack" : "Kaoken Attack",
+            "finisher" : "Moral Lesson",
+            "special_finisher" : "Spirit Bomb"
+        }
+        actual_data = json_helper.open_json_file(test_file)
+        self.assertEqual(test_data, actual_data)
+
     # Same directory as program / where i'm running it json file
     def test_open_json_file2(self):
         test_file = 'data/super_smash_bros/mario.json'

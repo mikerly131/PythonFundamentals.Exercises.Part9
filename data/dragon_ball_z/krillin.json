@@ -1,0 +1,13 @@
+{
+    "name" : "Krillin",
+    "major_weakness" : "fear",
+    "charisma" : 2,
+    "speed" : 4,
+    "strength" : 5,
+    "power_level": "Under 9000",
+    "power_attack" : "Kamehameha",
+    "fast_attack" : "Immediately Flee",
+    "finisher" : "Get Goku",
+    "special_finisher" : "Call Gohan"
+
+}
