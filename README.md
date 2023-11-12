@@ -22,6 +22,9 @@ python3 -m unittest json_helpter_test.py
 * Define a function called *read_all_json_files*. Given a string representing a path to a directory, this function should read all of the json files and return a list containing all of the json objects.
 * Make sure to incorporate the work from part A.
 
+Uses same test file/path as Part A:
+python3 -m unittest json_helpter_test.py
+
 ### Part C
 * Define a function called *write_pickle*. This function should take a file path and some data. Given these parameters, the function should write the contents of the json files to a file called **super_smash_characters.pickle**.
 
